@@ -15,7 +15,7 @@ A web-based Django application to manage Students and Employees with complete CR
 
 - **Python** 3.x
 - **Django** Web Framework
-- **SQLite3** (default Django database)
+- **MySQL** Database
 - **HTML5**, **CSS3**, **Bootstrap** (for styling)
 - **Git** and **GitHub** (for version control)
 
