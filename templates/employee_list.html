@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee</title>
+</head>
+<body>
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Welcome to employee data</h1>
+<table class="table table-bordered table-dark">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">username</th>
+      <th scope="col">email</th>
+      <th scope="col">Role</th>
+      <th scope="col">Date_of_Joined</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for employee in employees %}
+    <tr>
+      <th scope="col">{{employee.id}}</th>
+      <th scope="col">{{employee.username}}</th>
+      <th scope="col">{{employee.email}}</th>
+      <th scope="col">{{employee.role}}</th>
+      <th scope="col">{{employee.date_joined}}</th>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
+</body>
+</html>
